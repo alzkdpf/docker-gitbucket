@@ -15,8 +15,8 @@ RUN apt-get install -y oracle-java8-installer
 RUN apt-get install -y oracle-java8-set-default
 
 # setup timezone
-RUN apt-get install -y tzdata
-RUN echo Asia/Seoul | tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata
+# RUN apt-get install -y tzdata
+# RUN echo Asia/Seoul | tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
