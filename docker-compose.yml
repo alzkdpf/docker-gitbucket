@@ -5,7 +5,7 @@ services:
         container_name: gitbucket
         build:
           context: .
-          dockerfile: gitbucket.1.Dockerfile
+          dockerfile: Dockerfile
           network: host
         env_file:
           - ./envs/default.env
