@@ -34,4 +34,3 @@ RUN wget -P /tank/war https://github.com/gitbucket/gitbucket/releases/download/4
 COPY ./bootstrap.sh /tank/bootstrap.sh
 RUN chmod a+x /tank/bootstrap.sh
 CMD ["/bin/sh","-c","/tank/bootstrap.sh"]
-# CMD ["tail","-f","/dev/null"]
