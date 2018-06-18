@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+    gitbucket:
+        container_name: gitbucket
+        build:
+          context: .
+          dockerfile: gitbucket.1.Dockerfile
+          network: host
+        env_file:
+          - ./envs/default.env
+        volumes:
+          - './home:/tank/data_dir'
+        restart: always
+        ports:
+          - "8899:8899"
