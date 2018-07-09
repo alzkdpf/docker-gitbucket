@@ -10,4 +10,4 @@ docker run -d \
 --name=gitbucket \
 -v "$(pwd)/home":"/tank/data_dir" \
 --env-file="./envs/default.env" \
-gitbucket/img:1.0
+gitbucket/img:1.1
