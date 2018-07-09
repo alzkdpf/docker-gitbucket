@@ -3,7 +3,7 @@ if [ ! -d "home" ]; then
   mkdir home
 fi
 
-docker build -t gitbucket/img:1.0 .
+docker build -t gitbucket/img:1.1 .
 
 docker run -d \
 --net=host \
