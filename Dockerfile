@@ -30,7 +30,8 @@ RUN mkdir -p /tank/war
 RUN mkdir -p /tank/data_dir
 
 # RUN wget -P /tank/war https://github.com/gitbucket/gitbucket/releases/download/4.25.0/gitbucket.war
-RUN wget -P /tank/war https://github.com/gitbucket/gitbucket/releases/download/4.26.0/gitbucket.war
+#RUN wget -P /tank/war https://github.com/gitbucket/gitbucket/releases/download/4.26.0/gitbucket.war
+RUN wget -P /tank/war https://github.com/gitbucket/gitbucket/releases/download/4.29.0/gitbucket.war
 
 COPY ./bootstrap.sh /tank/bootstrap.sh
 RUN chmod a+x /tank/bootstrap.sh
